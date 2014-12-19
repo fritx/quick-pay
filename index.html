@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Demo: quick-pay</title>
+  <style>
+    li {
+      margin-bottom: 16px;
+    }
+    button {
+      padding: 6px;
+    }
+    .pay {
+      cursor: pointer;
+    }
+
+    .buy-now {
+      background-color: #33CCFF;
+      color: white;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 32px;
+      font-family: "Microsoft Yahei";
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <img class="pay" src="assets/DonateButton.jpg">
+    </li>
+    <li>
+      <div class="pay buy-now">BUY NOW</div>
+    </li>
+    <li>
+      <button class="pay">PAY ME!</button>
+    </li>
+  </ul>
+  
+  <a target="_blank" href="https://github.com/fritx/quick-pay">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="assets/fork.png" alt="Fork me on GitHub">
+  </a>
+  <script src="includes/jquery-2.1.3.min.js"></script>
+  <script src="quick-pay.js"></script>
+  <script>
+    var payData = {
+      'to': 'uxfritz@163.com',
+      'amount': '8.8',
+      'title': 'Pay! Test'
+      // (optional)
+      //'body': 'I think this project is great..'
+    }
+    function gotoPay(){
+      quickPay(payData)
+    }
+
+    $('.pay').on('click', gotoPay)
+  </script>
+</body>
+</html>
