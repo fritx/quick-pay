@@ -1,0 +1,17 @@
+{
+  "name": "quick-pay",
+  "version": "0.0.1",
+  "description": "Quick Payment Entry for Alipay",
+  "repository": "git@github.com:fritx/quick-pay.git",
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "cheerio": "^0.18.0",
+    "lodash": "^2.4.1",
+    "mocha": "^2.0.1",
+    "nightmare": "^1.6.5",
+    "request": "^2.51.0"
+  }
+}
