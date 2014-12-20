@@ -24,6 +24,13 @@
       font-family: "Microsoft Yahei";
       text-align: center;
     }
+
+    body {
+      display: none;
+    }
+    body.ready {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -43,6 +50,8 @@
     <img style="position: absolute; top: 0; right: 0; border: 0;" src="assets/fork.png" alt="Fork me on GitHub">
   </a>
   <script src="includes/jquery-2.1.3.min.js"></script>
+  <script>window.onload = function(){ $('body').addClass('ready') }</script>
+
   <script src="quick-pay.js"></script>
   <script>
     var payData = {
