@@ -13,7 +13,7 @@ var payData = {
 
 describe('quick-pay', function(){
 
-  this.timeout(10000)
+  this.timeout(20000)
 
   it('works', function(done){
 
@@ -65,7 +65,7 @@ describe('quick-pay', function(){
         )
       })
       .run(function(e){
-        console.log(e)
+        assert.equal(e, null)
         done()
       })
   })
